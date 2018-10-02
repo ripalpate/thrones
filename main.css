@@ -1,3 +1,13 @@
 body {
     background-color: grey;
 }
+.character{
+    display: inline-block;
+}
+.card-img-top {
+    height: 224px;
+    width: 224px;
+    object-fit: cover;
+    object-position: 0 0;
+    margin 0 auto;
+}
