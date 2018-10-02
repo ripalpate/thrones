@@ -1,7 +1,7 @@
 body {
     background-color: grey;
 }
-.character{
+.character-card{
     display: inline-block;
 }
 .card-img-top {

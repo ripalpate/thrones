@@ -1,5 +1,20 @@
 import {printToDom} from "../helper/util.js";
 
+const characterClick = (e) => {
+    const characterId = e.target.closest('.character-card').id;
+    const currentCharacter = characters.find((x)=>{
+        return x.id=== characterId
+    })
+    console.log(currentCharacter);
+}
+
+const createEvents = () => {
+    const characterCards = document.getElementsByClassName('character-card');
+    for(let i = 0; i < characterCards.length; i++) {
+        characterCards[i].addEventListener('click', characterClick);
+    }
+}
+
 const characters = [
     {id:"character1", name:"John Snow", house:"Stark", imageUrl:'https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Jon_Snow-Kit_Harington.jpg/220px-Jon_Snow-Kit_Harington.jpg'},
     {id:"character2", name: "Daenerys Targaryen", house:"Targaryen", imageUrl:"https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128"},
@@ -10,7 +25,7 @@ const characters = [
 const charactersBuilder = () => {
     let domString = '';
     characters.forEach((character)=>{
-        domString +=`<div class="col-2 character">`;
+        domString +=`<div class="col-2 character-card" id="${character.id}">`;
         domString +=`<div class="card">`;
         domString +=`<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
         domString +=`<div class="card-body">`;
@@ -21,6 +36,7 @@ const charactersBuilder = () => {
       
     });
     printToDom(domString);
+    createEvents();
 }
 
 export{charactersBuilder};
