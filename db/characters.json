@@ -1,0 +1,64 @@
+{
+    "characters":[
+        { 
+            "id":"character1", 
+            "name":"John Snow", 
+            "house":"Stark", 
+            "imageUrl":"https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Jon_Snow-Kit_Harington.jpg/220px-Jon_Snow-Kit_Harington.jpg"
+        },
+        {
+            "id":"character2", 
+            "name": "Daenerys Targaryen", 
+            "house":"Targaryen", 
+            "imageUrl":"https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128"
+        },
+        {
+            "id":"character3", 
+            "name": "Cersei Lannister", 
+            "house":"Lannister", 
+            "imageUrl":"https://vignette.wikia.nocookie.net/gameofthrones/images/c/c3/Profile-CerseiLannister.png/revision/latest?cb=20170828071355"
+        },
+        {
+            "id":"character4", 
+            "name":"Sansa Stark", 
+            "house":"Stark", 
+            "imageUrl":"https://vignette.wikia.nocookie.net/gameofthrones/images/7/7e/Sansastark706.jpg/revision/latest?cb=20170828072803"
+        },
+        {
+            "id":"character5", 
+            "name":"Joffrey Baratheon", 
+            "house":"Baratheon", 
+            "imageUrl":"https://vignette.wikia.nocookie.net/gameofthrones/images/2/25/Joffrey_Season_4_Episode_2_TLATR.jpg/revision/latest?cb=20171105180252"
+        },
+        {
+            "id":"character6", 
+            "name":"Viserys Targaryen", 
+            "house":"Targaryen", 
+            "imageUrl":"https://vignette.wikia.nocookie.net/characters/images/1/13/Viserys_Targaryen.png/revision/latest?cb=20171110022443"
+        },
+        {
+            "id":"character7", 
+            "name":"Arya Stark", 
+            "house":"Stark", 
+            "imageUrl":"https://vignette.wikia.nocookie.net/gameofthrones/images/5/54/Arya_the_dragon_and_the_wolf_s7.jpg/revision/latest?cb=20170828062911"
+        },
+        {
+            "id":"character8", 
+            "name":"Robb Stark", 
+            "house":"Stark", 
+            "imageUrl":"https://vignette.wikia.nocookie.net/gameofthrones/images/5/50/S3E9_Robb_Stark_main.jpg/revision/latest?cb=20160718071203"
+        },
+        {
+            "id":"character9", 
+            "name":"Brienne of Tarth", 
+            "house":"Tarth", 
+            "imageUrl":"https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Brienne_of_Tarth-Gwendoline_Christie.jpg/220px-Brienne_of_Tarth-Gwendoline_Christie.jpg"
+        },
+        {
+            "id":"character10", 
+            "name":"Myrcella Baratheon", 
+            "house":"Baratheon", 
+            "imageUrl":"https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/MyrcellaS5Cropped.jpg/revision/latest?cb=20160802025401"
+        }
+    ]
+}
