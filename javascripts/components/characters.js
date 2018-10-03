@@ -27,9 +27,13 @@ const setCharacters = (newArray)=>{
     characters = newArray;
 }
 
-const charactersBuilder = () => {
+const getCharacterz =() => {
+    return characters;
+}
+
+const charactersBuilder = (charactersArray) => {
     let domString = '';
-    characters.forEach((character)=>{
+    charactersArray.forEach((character)=>{
         domString +=`<div class="col-2 character-card" id="${character.id}">`;
         domString +=`<div class="card">`;
         domString +=`<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
@@ -44,4 +48,4 @@ const charactersBuilder = () => {
     createEvents();
 }
 
-export{charactersBuilder, setCharacters};
+export{charactersBuilder, setCharacters, getCharacterz};
