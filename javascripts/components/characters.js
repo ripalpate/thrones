@@ -17,6 +17,8 @@ const createEvents = () => {
     }
 }
 
+
+
 let characters = [
     // {id:"character1", name:"John Snow", house:"Stark", imageUrl:'https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Jon_Snow-Kit_Harington.jpg/220px-Jon_Snow-Kit_Harington.jpg'},
     // {id:"character2", name: "Daenerys Targaryen", house:"Targaryen", imageUrl:"https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128"},
@@ -29,6 +31,24 @@ const setCharacters = (newArray)=>{
 
 const getCharacterz =() => {
     return characters;
+}
+
+const sortPeople =(e)=>{
+    const house = e.target.id;
+    if(house==='All'){
+        charactersBuilder(characters);
+    } else {
+    const filteredPeeps = characters.filter(x=>x.house === house);
+    charactersBuilder(filteredPeeps);
+    }
+    console.log('click sort');
+} 
+
+const sortEvents = () => {
+    const allButton = document.getElementById('All');
+    const starkButton = document.getElementById('Stark');
+    allButton.addEventListener('click', sortPeople);
+    starkButton.addEventListener('click', sortPeople);
 }
 
 const charactersBuilder = (charactersArray) => {
@@ -48,4 +68,4 @@ const charactersBuilder = (charactersArray) => {
     createEvents();
 }
 
-export{charactersBuilder, setCharacters, getCharacterz};
+export{charactersBuilder, setCharacters, getCharacterz, sortEvents};
