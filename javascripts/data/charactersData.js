@@ -7,7 +7,7 @@ function executeThisCodeAfterFileLoaded () {
     //  console.log('request', data.characters);
 }
 function executeThisCodeIfXhrFails () {
-    console.log('broke');
+    // console.log('broke');
 }
 
 const getCharacters = () => {

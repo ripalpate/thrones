@@ -12,8 +12,8 @@ const detailsBuilder =(character)=>{
     //console.log('character inside details', character);
     let domString = '';
     
-    domString +=`<div class="col-6 offset-md-3">`
-    domString +=    `<div class="row">`;
+    domString +=`<div class="col-6 offset-md-3 detail-card">`
+    domString +=    `<div class="row d-flex justify-content-end">`;
     domString +=        `<button class="btn btn-danger" id="close">X</button>`;
     domString +=    `</div>`;
     domString +=    `<div class="row">`;
