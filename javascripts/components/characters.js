@@ -41,7 +41,7 @@ const sortPeople =(e)=>{
     const filteredPeeps = characters.filter(x=>x.house === house);
     charactersBuilder(filteredPeeps);
     }
-    console.log('click sort');
+    // console.log('click sort');
 } 
 
 const sortEvents = () => {
